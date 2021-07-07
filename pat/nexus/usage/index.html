@@ -29,7 +29,7 @@
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Schools <small class="text-muted">(GIAS)</small></div>
+              <div class="card-header text-center py-1 font-weight-bold">Schools <small class="text-muted">(GIAS)</small></div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
                     <div class="row row-cols-2">
@@ -42,8 +42,17 @@
                       <div class="col text-muted text-right">By Phase</div>
                       <div class="d-flex flex-column small">
                         <div>58 Primary</div>
+                        <div class="progress mb-1" style="height: 3px;">
+                          <div class="progress-bar bg-nexus-primary" style="width: 74%;"></div>
+                        </div>
                         <div>18 Secondary</div>
+                        <div class="progress mb-1" style="height: 3px;">
+                          <div class="progress-bar bg-nexus-primary" style="width: 23%;"></div>
+                        </div>
                         <div>2 Other</div>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar bg-nexus-primary" style="width: 3%;"></div>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -52,7 +61,13 @@
                       <div class="col text-muted text-right">By Type</div>
                       <div class="d-flex flex-column small">
                         <div>35 Maintained</div>
+                        <div class="progress mb-1" style="height: 3px;">
+                          <div class="progress-bar bg-nexus-primary" style="width: 45%;"></div>
+                        </div>
                         <div>43 Academies</div>
+                        <div class="progress" style="height: 3px;">
+                          <div class="progress-bar bg-nexus-primary" style="width: 55%;"></div>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -62,7 +77,7 @@
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Data</div>
+              <div class="card-header text-center py-1 font-weight-bold">Data</div>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
                     <div class="row row-cols-2 align-items-center">
@@ -101,43 +116,490 @@
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Modules</div>
-              <div class="card-body">Content</div>
+              <div class="card-header text-center py-1 font-weight-bold">KPIs</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="text-muted">Schools with a&hellip;</div>
+                  <div class="row row-cols-2 align-items-center small" style="row-gap: 0.2rem;">
+                    <div class="col text-muted text-right">
+                      &hellip;RAG
+                    </div>
+                    <div class="col flex-column">
+                      <div><i class="fas fa-circle text-outstanding"></i> 80%</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 80%;"></div>
+                      </div>
+                    </div>
+                    <div class="col text-muted text-right">
+                      &hellip;Grade
+                    </div>
+                    <div class="col flex-column">
+                      <div><i class="fas fa-circle text-req-improvement"></i> 45%</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 45%;"></div>
+                      </div>
+                    </div>
+                    <div class="col text-muted text-right">
+                      &hellip;Target Grade
+                    </div>
+                    <div class="col flex-column">
+                      <div><i class="fas fa-circle text-good"></i> 65%</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 65%;"></div>
+                      </div>
+                    </div>
+                    <div class="col text-muted text-right">
+                      &hellip;Category
+                    </div>
+                    <div class="col flex-column">
+                      <div><i class="fas fa-circle text-inadequate"></i> 10%</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 10%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      Date any KPI was last updated
+                    </div>
+                    <div class="col flex-column">
+                      <div>12 Apr 2020</div>
+                      <small class="text-muted">451 days ago</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">KPIs</div>
-              <div class="card-body">Content</div>
+              <div class="card-header text-center py-1 font-weight-bold">Users</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2">
+                    <div class="col text-muted text-right">Total</div>
+                    <div class="font-weight-bold">40</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">By Role</div>
+                    <div class="d-flex flex-column small">
+                      <div>5 Admin</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 13%;"></div>
+                      </div>
+                      <div>25 Standard</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 63%;"></div>
+                      </div>
+                      <div>10 Other</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 25%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">By Type</div>
+                    <div class="d-flex flex-column small">
+                      <div>35 Maintained</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 45%;"></div>
+                      </div>
+                      <div>43 Academies</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 55%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex flex-column">
+                    <div class="text-center mb-1 text-muted">Latest Login per User</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Users</div>
-              <div class="card-body">Content</div>
+              <div class="card-header text-center py-1 font-weight-bold">Perspective</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      Total
+                    </div>
+                    <div class="col font-weight-bold">74</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      By PSP Acc. Type
+                    </div>
+                    <div class="col d-flex flex-column small">
+                      <div>24 Full</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-psp-primary" style="width: 32%;"></div>
+                      </div>
+                      <div>50 Lite</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-psp-secondary" style="width: 68%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex flex-column">
+                    <div class="text-center mb-1 text-muted">Latest Login per School</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Perspective</div>
-              <div class="card-body">Content</div>
+              <div class="card-header text-center py-1 font-weight-bold">Broadcast</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">One/Two Way?</div>
+                    <div class="col"><span class="badge badge-success">Two Way</span></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Users with access</div>
+                    <div class="col">5</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Date of last publication</div>
+                    <div class="col flex-column">
+                      <div>24 Jun 2021</div>
+                      <small class="text-muted">13 days ago</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Files published in last 30 days</div>
+                    <div class="col flex-column">
+                      <div>104</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Date last file was received</div>
+                    <div class="col flex-column">
+                      <div>4 Feb 2021</div>
+                      <small class="text-muted">153 days ago</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Files received in last 30 days</div>
+                    <div class="col flex-column">
+                      <div>0</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex flex-column">
+                    <div class="text-center mb-1 text-muted">Latest Login per User</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Broadcast</div>
-              <div class="card-body">Content</div>
+              <div class="card-header text-center py-1 font-weight-bold">Pendulum</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Users with access</div>
+                    <div class="col">40</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Users by Role</div>
+                    <div class="col d-flex flex-column small">
+                      <div>4 Visit Managers+</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 10%;"></div>
+                      </div>
+                      <div>0 Admins</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 0%;"></div>
+                      </div>
+                      <div>25 Advisors</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 63%;"></div>
+                      </div>
+                      <div>10 Standard</div>
+                      <div class="progress" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 25%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Visits created</div>
+                      <small class="d-block">in the last 30 days</small></div>
+                    <div class="col flex-column">
+                      <div>104</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">Date of latest visit</div>
+                    <div class="col flex-column">
+                      <div>4 Feb 2021</div>
+                      <small class="text-muted">153 days ago</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Visits by type</div>
+                      <small class="d-block">in the last 365 days</small>
+                    </div>
+                    <div class="col d-flex flex-column small">
+                      <div>52 SI</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 16%;"></div>
+                      </div>
+                      <div>273 Other</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 84%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex flex-column">
+                    <div class="text-center mb-1 text-muted">Latest Login per User</div>
+                    <div class="progress">
+                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col">
             <div class="card">
-              <div class="card-header text-center">Pendulum</div>
-              <div class="card-body">Content</div>
+              <div class="card-header text-center py-1 font-weight-bold">News</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Articles posted</div>
+                      <small class="d-block">in the last 30 days</small>
+                    </div>
+                    <div class="col">0</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Date an article was last posted</div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <div>Never</div>
+                      <small class="d-block text-muted">n/a</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center py-1 font-weight-bold">Batch Reporting</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Batched produced</div>
+                      <small class="d-block">in the last 30 days</small>
+                    </div>
+                    <div class="col">3</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Date a batch was last produced</div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <div>6 Jul 2021</div>
+                      <small class="d-block text-muted">1 day ago</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center py-1 font-weight-bold">Documents</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Documents uploaded</div>
+                      <small class="d-block">in the last 30 days</small>
+                    </div>
+                    <div class="col">0</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Date a document was last uploaded</div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <div>9 Aug 2018</div>
+                      <small class="d-block text-muted">1,063 days ago</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center py-1 font-weight-bold">Nova</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Schools with access</div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <div><i class="fas fa-circle text-outstanding"></i> 89%</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 89%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Report views</div>
+                      <small class="d-block">in the last 30 days</small>
+                    </div>
+                    <div class="col d-flex flex-column small">
+                      <div>128 via NXS</div>
+                      <div>398 via PSP</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Date a report was last viewed</div>
+                    </div>
+                    <div class="col d-flex flex-column small">
+                      <div>9 Jun 2021 via NXS</div>
+                      <div>3 Jun 2021 via PSP</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center py-1 font-weight-bold">Insight</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Schools with access</div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <div><i class="fas fa-circle text-req-improvement"></i> 42%</div>
+                      <div class="progress mb-1" style="height: 3px;">
+                        <div class="progress-bar bg-nexus-primary" style="width: 42%;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Page views</div>
+                      <small class="d-block">in the last 30 days</small>
+                    </div>
+                    <div class="col d-flex flex-column small">
+                      <div>32 via NXS</div>
+                      <div>12 via PSP</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Date a report was last viewed</div>
+                    </div>
+                    <div class="col d-flex flex-column small">
+                      <div>9 Jun 2021 via NXS</div>
+                      <div>3 Jun 2021 via PSP</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
 
