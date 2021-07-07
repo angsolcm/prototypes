@@ -48,13 +48,13 @@
                 <li class="list-group-item">
                   <div class="row row-cols-2">
                     <div class="col text-muted text-right">Total</div>
-                    <div class="font-weight-bold">78</div>
+                    <div>78</div>
                   </div>
                 </li>
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">By Phase</div>
-                    <div class="d-flex flex-column small">
+                    <div class="col d-flex flex-column small">
                       <div>58 Primary</div>
                       <div class="progress mb-1" style="height: 3px;">
                         <div class="progress-bar bg-nexus-primary" style="width: 74%;"></div>
@@ -73,7 +73,7 @@
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">By Type</div>
-                    <div class="d-flex flex-column small">
+                    <div class="col d-flex flex-column small">
                       <div>35 Maintained</div>
                       <div class="progress mb-1" style="height: 3px;">
                         <div class="progress-bar bg-nexus-primary" style="width: 45%;"></div>
@@ -96,13 +96,13 @@
                 <li class="list-group-item">
                   <div class="row row-cols-2">
                     <div class="col text-muted text-right">Total</div>
-                    <div class="font-weight-bold">40</div>
+                    <div>40</div>
                   </div>
                 </li>
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">By Role</div>
-                    <div class="d-flex flex-column small">
+                    <div class="col d-flex flex-column small">
                       <div>5 Admin</div>
                       <div class="progress mb-1" style="height: 3px;">
                         <div class="progress-bar bg-nexus-primary" style="width: 13%;"></div>
@@ -114,21 +114,6 @@
                       <div>10 Other</div>
                       <div class="progress" style="height: 3px;">
                         <div class="progress-bar bg-nexus-primary" style="width: 25%;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row row-cols-2 align-items-center">
-                    <div class="col text-muted text-right">By Type</div>
-                    <div class="d-flex flex-column small">
-                      <div>35 Maintained</div>
-                      <div class="progress mb-1" style="height: 3px;">
-                        <div class="progress-bar bg-nexus-primary" style="width: 45%;"></div>
-                      </div>
-                      <div>43 Academies</div>
-                      <div class="progress" style="height: 3px;">
-                        <div class="progress-bar bg-nexus-primary" style="width: 55%;"></div>
                       </div>
                     </div>
                   </div>
@@ -197,7 +182,7 @@
                     <div class="col text-muted text-right">
                       Total
                     </div>
-                    <div class="col font-weight-bold">74</div>
+                    <div>74</div>
                   </div>
                 </li>
                 <li class="list-group-item">
@@ -293,6 +278,9 @@
               </ul>
             </div>
 
+          </div>
+
+          <div class="col">
             <div class="card">
               <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Nova</div>
               <ul class="list-group list-group-flush">
@@ -346,7 +334,9 @@
                 </li>
               </ul>
             </div>
+          </div>
 
+          <div class="col">
             <div class="card">
               <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Insight</div>
               <ul class="list-group list-group-flush">
@@ -402,6 +392,34 @@
             </div>
           </div>
 
+          <div class="col">
+            <div class="card">
+              <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Batch Reporting</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Batches made</div>
+                      <small class="d-block">in the last 30 days</small>
+                    </div>
+                    <div class="col">3</div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      <div>Date a batch was last made</div>
+                    </div>
+                    <div class="col d-flex flex-column">
+                      <div><i class="fas fa-circle text-outstanding"></i> 6 Jul 2021</div>
+                      <small class="d-block text-muted">1 day ago</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div class="col d-flex flex-column" style="row-gap: 1rem;">
             <div class="card">
               <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">News</div>
@@ -429,39 +447,19 @@
               </ul>
             </div>
 
-            <div class="card">
-              <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Batch Reporting</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <div class="row row-cols-2 align-items-center">
-                    <div class="col text-muted text-right">
-                      <div>Batches produced</div>
-                      <small class="d-block">in the last 30 days</small>
-                    </div>
-                    <div class="col">3</div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row row-cols-2 align-items-center">
-                    <div class="col text-muted text-right">
-                      <div>Date a batch was last produced</div>
-                    </div>
-                    <div class="col d-flex flex-column">
-                      <div><i class="fas fa-circle text-outstanding"></i> 6 Jul 2021</div>
-                      <small class="d-block text-muted">1 day ago</small>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            
 
+            
+          </div>
+
+          <div class="col">
             <div class="card">
               <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Documents</div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">
-                      <div>Documents uploaded</div>
+                      <div>Docs. uploaded</div>
                       <small class="d-block">in the last 30 days</small>
                     </div>
                     <div class="col">0</div>
@@ -470,7 +468,7 @@
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">
-                      <div>Date a document was last uploaded</div>
+                      <div>Date a doc. was last uploaded</div>
                     </div>
                     <div class="col d-flex flex-column">
                       <div><i class="fas fa-circle text-inadequate"></i> 9 Aug 2018</div>
@@ -486,6 +484,17 @@
             <div class="card">
               <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Broadcast <span class="badge badge-success">Two Way</span></div>
               <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      Renewal
+                    </div>
+                    <div class="col d-flex flex-column align-items-start">
+                      <div>£12,000 <span class="badge badge-outstanding">@ 90%</span></div>
+                      <small class="text-muted">19 Aug 2021</small>
+                    </div>
+                  </div>
+                </li>
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">Users with access</div>
@@ -549,6 +558,17 @@
             <div class="card">
               <div class="card-header text-center py-1 font-weight-bold bg-nexus-secondary text-white">Pendulum</div>
               <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row row-cols-2 align-items-center">
+                    <div class="col text-muted text-right">
+                      Renewal
+                    </div>
+                    <div class="col d-flex flex-column align-items-start">
+                      <div>£11,000 <span class="badge badge-good">@ 75%</span></div>
+                      <small class="text-muted">19 Aug 2021</small>
+                    </div>
+                  </div>
+                </li>
                 <li class="list-group-item">
                   <div class="row row-cols-2 align-items-center">
                     <div class="col text-muted text-right">Users with access</div>
