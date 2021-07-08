@@ -127,11 +127,11 @@
                   <div class="d-flex flex-column">
                     <div class="text-center mb-1 text-muted small">Latest Login per User</div>
                     <div class="progress">
-                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
-                      <div class="progress-bar bg-good" style="width: 40%;"></div>
-                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
-                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
-                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                      <div class="progress-bar bg-outstanding" style="width: 10%;" data-toggle="tooltip" title="0 to 30 days: 4 (10%)"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;" data-toggle="tooltip" title="31 to 90 days: 16 (40%)"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;" data-toggle="tooltip" title="91 to 180 days: 10 (25%)"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;" data-toggle="tooltip" title="181 days or more: 8 (20%)"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;" data-toggle="tooltip" title="Never: 2 (5%)"></div>
                     </div>
                   </div>
                 </li>
@@ -211,11 +211,11 @@
                   <div class="d-flex flex-column">
                     <div class="text-center mb-1 text-muted small">Latest Login per School</div>
                     <div class="progress">
-                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
-                      <div class="progress-bar bg-good" style="width: 40%;"></div>
-                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
-                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
-                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                      <div class="progress-bar bg-outstanding" style="width: 10%;" data-toggle="tooltip" title="0 to 30 days: 4 (10%)"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;" data-toggle="tooltip" title="31 to 90 days: 16 (40%)"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;" data-toggle="tooltip" title="91 to 180 days: 10 (25%)"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;" data-toggle="tooltip" title="181 days or more: 8 (20%)"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;" data-toggle="tooltip" title="Never: 2 (5%)"></div>
                     </div>
                   </div>
                 </li>
@@ -547,11 +547,11 @@
                   <div class="d-flex flex-column">
                     <div class="text-center mb-1 text-muted small">Latest Login per User</div>
                     <div class="progress">
-                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
-                      <div class="progress-bar bg-good" style="width: 40%;"></div>
-                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
-                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
-                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                      <div class="progress-bar bg-outstanding" style="width: 10%;" data-toggle="tooltip" title="0 to 30 days: 4 (10%)"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;" data-toggle="tooltip" title="31 to 90 days: 16 (40%)"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;" data-toggle="tooltip" title="91 to 180 days: 10 (25%)"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;" data-toggle="tooltip" title="181 days or more: 8 (20%)"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;" data-toggle="tooltip" title="Never: 2 (5%)"></div>
                     </div>
                   </div>
                 </li>
@@ -645,11 +645,11 @@
                   <div class="d-flex flex-column">
                     <div class="text-center mb-1 text-muted small">Latest Login per User</div>
                     <div class="progress">
-                      <div class="progress-bar bg-outstanding" style="width: 10%;"></div>
-                      <div class="progress-bar bg-good" style="width: 40%;"></div>
-                      <div class="progress-bar bg-req-improvement" style="width: 25%;"></div>
-                      <div class="progress-bar bg-inadequate" style="width: 20%;"></div>
-                      <div class="progress-bar bg-not-graded" style="width: 5%;"></div>
+                      <div class="progress-bar bg-outstanding" style="width: 10%;" data-toggle="tooltip" title="0 to 30 days: 4 (10%)"></div>
+                      <div class="progress-bar bg-good" style="width: 40%;" data-toggle="tooltip" title="31 to 90 days: 16 (40%)"></div>
+                      <div class="progress-bar bg-req-improvement" style="width: 25%;" data-toggle="tooltip" title="91 to 180 days: 10 (25%)"></div>
+                      <div class="progress-bar bg-inadequate" style="width: 20%;" data-toggle="tooltip" title="181 days or more: 8 (20%)"></div>
+                      <div class="progress-bar bg-not-graded" style="width: 5%;" data-toggle="tooltip" title="Never: 2 (5%)"></div>
                     </div>
                   </div>
                 </li>
@@ -666,6 +666,11 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>
