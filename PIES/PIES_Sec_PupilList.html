@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../../../static/css/bootstrap4/bootstrap-custom.css">
+        <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+        <title></title>
+        <style>
+            .list-group-item {
+                padding: 0.5rem 0.75rem;
+            };
+            td {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Perspective Basic Nav -->
+        <div class="row" style="background-color: #2c3e50">
+            <div class="col-12 mx-5 px-5">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item active"><a class="nav-link text-white" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Self Evalution</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Planning</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Perf. Mgmt</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Reports</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">LA</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Documents</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Survey</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Visits</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Watchsted</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="#">Tools</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-12 px-5">
+                <h2 class="px-5 py-3">My Pupil List</h2>
+            </div>
+        </div>
+        <!-- Filter List -->
+        <div class="row">
+            <div class="col-12 px-5">
+                <div class="px-5" id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-auto">
+                                    <h5>
+                                        <button class="btn text-white py-1" style="background-color: #2c3e50;" data-toggle="collapse" data-target="#collapseOne">
+                                            Show/Hide Filters
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div class="col-sm-auto px-1 pt-1">
+                                    <h5><span class="badge bg-light py-2 border border-secondary">Year Group: All</span></h5>
+                                </div>
+                                <div class="col-sm-auto px-1 pt-1">
+                                    <h5><span class="badge bg-light py-2 border border-secondary">Destination School: All</span></h5>
+                                </div>
+                                <div class="col-sm-auto px-1 pt-1">
+                                    <h5><span class="badge bg-light py-2 border border-secondary">Destination LA: All</span></h5>
+                                </div>
+                                <div class="col-sm-auto px-1 pt-1">
+                                    <h5><span class="badge bg-light py-2 border border-secondary">Pupil Search: All</span></h5>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Year Group</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>All</option>
+                                                <option value="1">Year 6A</option>
+                                                <option value="2">Year 6B</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Destination School</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>All</option>
+                                                <option value="1">Angel Academy</option>
+                                                <option value="2">Another School</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="inputGroupSelect01">Destination LA</label>
+                                            </div>
+                                            <select class="custom-select" id="inputGroupSelect01">
+                                                <option selected>All</option>
+                                                <option value="1">Liverpool</option>
+                                                <option value="2">Knowsley</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">Pupil Name</span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Adam Apple..." aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pupil List Table -->
+        <br />
+        <div class="row">
+            <div class="col-11 mx-5 px-5">
+                <div class="table-responsive">
+                    <table class="table table-hover text-nowrap">
+                        <thead>
+                            <tr>
+                                <!-- Pupil Identifers-->
+                                <th scope="col">Forename</th>
+                                <th scope="col">Middlename</th>
+                                <th scope="col">Surname</th>
+                                <th scope="col">UPN</th>
+                                <!-- Census Data -->
+                                <th scope="col">Gender</th>
+                                <th scope="col">Date Of Birth</th>
+                                <th scope="col">Origin School URN</th>
+                                <th scope="col">Origin School Estab</th>
+                                <th scope="col">Origin School Name</th>
+                                <th scope="col">Entry Date</th>
+                                <th scope="col">Ethnicity</th>
+                                <th scope="col">Language</th>
+                                <th scope="col">SEN</th>
+                                <th scope="col">SEN Type</th>
+                                <th scope="col">FSM Eligible</th>
+                                <!-- Configured Columns -->
+                                <th scope="col">Configured Field 1</th>
+                                <th scope="col">Configured Field 2</th>
+                                <th scope="col">Configured Field 3</th>
+                                <th scope="col">Configured Field 4</th>
+                                <th scope="col">Configured Field 5</th>
+                                <th scope="col">Configured Field 6</th>
+                                <th scope="col">Configured Field 7</th>
+                                <th scope="col">Configured Field 8</th>
+                                <th scope="col">Configured Field 9</th>
+                                <th scope="col">Configured Field 10</th>
+                                <th scope="col">Configured Field 11</th>
+                                <th scope="col">Configured Field 12</th>
+                                <th scope="col">Configured Field 13</th>
+                                <th scope="col">Configured Field 14</th>
+                                <th scope="col">Configured Field 15</th>
+                                <th scope="col">Configured Field 16</th>
+                                <th scope="col">Configured Field 17</th>
+                                <th scope="col">Configured Field 18</th>
+                                <th scope="col">Configured Field 19</th>
+                                <th scope="col">Configured Field 20</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-truncate" style="max-width: 200px">
+                                <td>Adam</td>
+                                <td></td>
+                                <td>Apple</td>
+                                <td>A123456654321</td>
+                                <td>Male</td>
+                                <td>01/01/2010</td>
+                                <td>123456</td>
+                                <td>999/2000</td>
+                                <td>A Primary School</td>
+                                <td>01/09/2007</td>
+                                <td>White - British</td>
+                                <td>English</td>
+                                <td>SEN Support</td>
+                                <td>Visual Impairment</td>
+                                <td>Yes</td>
+                                <!-- Config Fields -->
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>A Long answer</td>
+                                <td>A somewhat longer answer </td>
+                                <td>A sentence that answers a question that was asked</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>True</td>
+                                <td>False</td>
+                                <td>Yes</td>
+                                <td>A Long answer</td>
+                                <td>A somewhat longer answer </td>
+                                <td>A Long answer</td>
+                                <td>A somewhat longer answer </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
