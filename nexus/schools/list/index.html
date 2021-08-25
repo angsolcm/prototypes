@@ -39,6 +39,10 @@
       justify-self: start;
     }
 
+    tr {
+      border-bottom: white solid 4px;
+    }
+
   </style>
 </head>
 
@@ -58,165 +62,494 @@
       </thead>
       <tbody>
 
-        <!-- SCHOOL COLUMN -->
-        <td class="text-left">
+        <tr>
 
-          <div class="d-flex flex-column" style="row-gap: 0.5em;">
+          <!-- SCHOOL COLUMN -->
+          <td class="text-left">
 
-            <div class="d-flex flex-column" style="row-gap: 0.25em;">
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
 
-              <div class="font-weight-bold"><a href="#" class="text-nexus-primary">Bassett Green Primary School</a></div>
+              <div class="d-flex flex-column" style="row-gap: 0.25em;">
 
-              <div class="text-muted small d-flex flex-column" style="row-gap: 0.25em;">
+                <div class="font-weight-bold"><a href="#" class="text-nexus-primary">Bassett Green Primary School</a></div>
 
-                <div class="d-flex" style="column-gap: 1em">
-                  <span><abbr title="Establishment number">DfE</abbr>: 2000</span>
-                  <span><abbr title="Unique reference number">URN</abbr>: 111222</span>
+                <div class="text-muted small d-flex flex-column" style="row-gap: 0.25em;">
+
+                  <div class="d-flex" style="column-gap: 1em">
+                    <span><abbr title="Establishment number">DfE</abbr>: 2000</span>
+                    <span><abbr title="Unique reference number">URN</abbr>: 111222</span>
+                  </div>
+
+                  <div><abbr title="Head teacher">HT</abbr>: Krish Marsh</div>
+
                 </div>
 
-                <div><abbr title="Head teacher">HT</abbr>: Krish Marsh</div>
+              </div>
 
+              <div class="d-flex" style="gap: 0.25em;">
+                <span class="badge badge-info">Primary</span>
+                <span class="badge badge-primary" data-toggle="tooltip" title="MAT: City Learning Trust">Academy (<abbr title="sponsored">spon.</abbr>)</span>
               </div>
 
             </div>
 
-            <div class="d-flex" style="gap: 0.25em;">
-              <span class="badge badge-info">Primary</span>
-              <span class="badge badge-primary" data-toggle="tooltip" title="MAT: City Learning Trust">Academy (<abbr title="sponsored">spon.</abbr>)</span>
+          </td>
+
+          <!-- OFSTED COLUMN -->
+          <td>
+            <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
+              <span class="badge badge-outstanding">Outstanding</span>
+              <span class="text-muted small">24 Aug 2021</span>
+            </div>
+          </td>
+
+          <!-- SCHOOL IMPROVEMENT COLUMN -->
+          <td>
+            <div class="key-value" style="grid-template-columns: 50% 50%;">
+              <span class="text-muted small">RAG</span>
+              <i class="fas fa-lg fa-circle text-req-improvement"></i>
+
+              <span class="text-muted small">Grade</span>
+              <span class="badge badge-good text-truncate">Good</span>
+
+              <span class="text-muted small">Target</span>
+              <span class="badge badge-good text-truncate">Good</span>
+
+              <span class="text-muted small">Category</span>
+              <span class="badge badge-dark text-wrap text-truncate">In Review</span>
+
             </div>
 
-          </div>
+          </td>
 
-        </td>
+          <!-- NUMBER ON ROLL COLUMN -->
+          <td>
+            <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
+              <span class="">180</span>
 
-        <!-- OFSTED COLUMN -->
-        <td>
-          <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
-            <span class="badge badge-outstanding">Outstanding</span>
-            <span class="text-muted small">24 Aug 2021</span>
-          </div>
-        </td>
-
-        <!-- SCHOOL IMPROVEMENT COLUMN -->
-        <td>
-          <div class="key-value">
-            <span class="text-muted small">RAG</span>
-            <i class="fas fa-lg fa-circle text-req-improvement"></i>
-
-            <span class="text-muted small">Grade</span>
-            <span class="badge badge-good">Good</span>
-
-            <span class="text-muted small">Target</span>
-            <span class="badge badge-good">Good</span>
-
-            <span class="text-muted small">Category</span>
-            <span class="badge badge-dark text-wrap">In Review</span>
-
-          </div>
-
-        </td>
-
-        <!-- NUMBER ON ROLL COLUMN -->
-        <td>
-          <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
-            <span class="">180</span>
-
-            <div class="align-self-stretch">
-              <div class="d-flex justify-content-between small text-muted">
-                <span><abbr title="Female">F</abbr>: 58.1%</span>
-                <span><abbr title="Male">M</abbr>: 41.9%</span>
-              </div>
-              <div class="progress" style="height: 5px;">
-                <div class="progress-bar" style="background-color: rgb(219, 185, 96); width: 58.1%"></div>
-                <div class="progress-bar" style="background-color: rgb(42, 167, 158); width: 41.9%"></div>
+              <div class="align-self-stretch">
+                <div class="d-flex justify-content-between small text-muted">
+                  <span><abbr title="Female">F</abbr>: 58.1%</span>
+                  <span><abbr title="Male">M</abbr>: 41.9%</span>
+                </div>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar" style="background-color: rgb(219, 185, 96); width: 58.1%"></div>
+                  <div class="progress-bar" style="background-color: rgb(42, 167, 158); width: 41.9%"></div>
+                </div>
               </div>
             </div>
-          </div>
-        </td>
+          </td>
 
-        <!-- ABSENCE COLUMN -->
-        <td>
-          <div class="key-value" style="grid-template-columns: 50% max-content;">
-            <span class="text-muted small">Overall</span>
-            <span style="justify-self: end;">9.6%</span>
+          <!-- ABSENCE COLUMN -->
+          <td>
+            <div class="key-value" style="grid-template-columns: 50% max-content;">
+              <span class="text-muted small">Overall</span>
+              <span style="justify-self: end;">9.6%</span>
 
-            <span class="text-muted small"><abbr title="Persistent absentees">PA</abbr></span>
-            <span style="justify-self: end;">2.4%</span>
+              <span class="text-muted small"><abbr title="Persistent absentees">PA</abbr></span>
+              <span style="justify-self: end;">2.4%</span>
 
-            <!--
+              <!--
             <span class="text-muted small"><abbr title="Permanent exclusions">Perm.</abbr></span>
             <span style="justify-self: end;">3</span>
 
             <span class="text-muted small"><abbr title="Fixed term exclusions">Fixed</abbr></span>
             <span style="justify-self: end;">19</span>
             -->
-          </div>
-        </td>
+            </div>
+          </td>
 
-        <!-- DISADVANTAGED COLUMN -->
-        <td>
-          <div class="d-flex flex-column" style="row-gap: 0.5em;">
+          <!-- DISADVANTAGED COLUMN -->
+          <td>
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
 
-            <div class="d-flex flex-column" style="row-gap: 0.1em;">
-              <div><span class="text-muted small"><abbr title="Free school meals">FSM</abbr>:</span> 23%</div>
-              <div class="progress bg-white justify-content-end" style="height: 5px;">
-                <div class="progress-bar bg-nexus-primary" style="width: 23%"></div>
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Free school meals">FSM</abbr>:</span> 23%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 23%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Pupil Premium">PP</abbr>:</span> 32%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 32%"></div>
+                </div>
+              </div>
+
+            </div>
+          </td>
+
+          <!-- CHARACTERISTICS COLUMN -->
+          <td>
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Special educational needs">SEN</abbr>:</span> 22%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 22%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="English as an additional language">EAL</abbr>:</span> 67%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 67%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Black, Asian and minority ethnic">BME</abbr>:</span> 34%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 34%"></div>
+                </div>
+              </div>
+
+            </div>
+          </td>
+
+          <!-- ACTION COLUMN -->
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-nexus-primary dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">School dashboard&hellip;</a>
+                <a class="dropdown-item" href="#">Update categories&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School headlines&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School intelligence&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School census&hellip;</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Ofsted&hellip;</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Get information about schools&hellip;</a>
               </div>
             </div>
+          </td>
 
-            <div class="d-flex flex-column" style="row-gap: 0.1em;">
-              <div><span class="text-muted small"><abbr title="Pupil Premium">PP</abbr>:</span> 32%</div>
-              <div class="progress bg-white justify-content-end" style="height: 5px;">
-                <div class="progress-bar bg-nexus-primary" style="width: 32%"></div>
+        </tr>
+
+        <tr>
+
+          <!-- SCHOOL COLUMN -->
+          <td class="text-left">
+
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.25em;">
+
+                <div class="font-weight-bold"><a href="#" class="text-nexus-primary">Pitcombe School</a></div>
+
+                <div class="text-muted small d-flex flex-column" style="row-gap: 0.25em;">
+
+                  <div class="d-flex" style="column-gap: 1em">
+                    <span><abbr title="Establishment number">DfE</abbr>: 2001</span>
+                    <span><abbr title="Unique reference number">URN</abbr>: 111333</span>
+                  </div>
+
+                  <div><abbr title="Head teacher">HT</abbr>: Ruby McDonagh</div>
+
+                </div>
+
+              </div>
+
+              <div class="d-flex" style="gap: 0.25em;">
+                <span class="badge badge-info">Special</span>
+                <span class="badge badge-primary">LA-maintained</span>
+              </div>
+
+            </div>
+
+          </td>
+
+          <!-- OFSTED COLUMN -->
+          <td>
+            <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
+              <span class="badge badge-good">Good</span>
+              <span class="text-muted small">18 Jan 2017</span>
+            </div>
+          </td>
+
+          <!-- SCHOOL IMPROVEMENT COLUMN -->
+          <td>
+            <div class="key-value" style="grid-template-columns: 50% 50%;">
+              <span class="text-muted small">RAG</span>
+              <i class="fas fa-lg fa-circle text-good"></i>
+
+              <span class="text-muted small">Grade</span>
+              <span class="badge badge-good text-truncate">Good</span>
+
+              <span class="text-muted small">Target</span>
+              <span class="badge badge-outstanding text-truncate">Outstanding</span>
+
+            </div>
+
+          </td>
+
+          <!-- NUMBER ON ROLL COLUMN -->
+          <td>
+            <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
+              <span class="">83</span>
+
+              <div class="align-self-stretch">
+                <div class="d-flex justify-content-between small text-muted">
+                  <span><abbr title="Female">F</abbr>: 51.6%</span>
+                  <span><abbr title="Male">M</abbr>: 48.4%</span>
+                </div>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar" style="background-color: rgb(219, 185, 96); width: 51.6%"></div>
+                  <div class="progress-bar" style="background-color: rgb(42, 167, 158); width: 48.4%"></div>
+                </div>
               </div>
             </div>
+          </td>
 
-          </div>
-        </td>
+          <!-- ABSENCE COLUMN -->
+          <td>
+            <div class="key-value" style="grid-template-columns: 50% max-content;">
+              <span class="text-muted small">Overall</span>
+              <span style="justify-self: end;">19.9%</span>
 
-        <!-- CHARACTERISTICS COLUMN -->
-        <td>
-          <div class="d-flex flex-column" style="row-gap: 0.5em;">
+              <span class="text-muted small"><abbr title="Persistent absentees">PA</abbr></span>
+              <span style="justify-self: end;">8.0%</span>
 
-            <div class="d-flex flex-column" style="row-gap: 0.1em;">
-              <div><span class="text-muted small">SEN:</span> 22%</div>
-              <div class="progress bg-white justify-content-end" style="height: 5px;">
-                <div class="progress-bar bg-nexus-primary" style="width: 22%"></div>
+              <!--
+            <span class="text-muted small"><abbr title="Permanent exclusions">Perm.</abbr></span>
+            <span style="justify-self: end;">3</span>
+
+            <span class="text-muted small"><abbr title="Fixed term exclusions">Fixed</abbr></span>
+            <span style="justify-self: end;">19</span>
+            -->
+            </div>
+          </td>
+
+          <!-- DISADVANTAGED COLUMN -->
+          <td>
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Free school meals">FSM</abbr>:</span> 42%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 42%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Pupil Premium">PP</abbr>:</span> 48%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 48%"></div>
+                </div>
+              </div>
+
+            </div>
+          </td>
+
+          <!-- CHARACTERISTICS COLUMN -->
+          <td>
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Special educational needs">SEN</abbr>:</span> 100%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 100%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="English as an additional language">EAL</abbr>:</span> 12%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 12%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Black, Asian and minority ethnic">BME</abbr>:</span> 22%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 22%"></div>
+                </div>
+              </div>
+
+            </div>
+          </td>
+
+          <!-- ACTION COLUMN -->
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-nexus-primary dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">School dashboard&hellip;</a>
+                <a class="dropdown-item" href="#">Update categories&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School headlines&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School intelligence&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School census&hellip;</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Ofsted&hellip;</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Get information about schools&hellip;</a>
               </div>
             </div>
+          </td>
 
-            <div class="d-flex flex-column" style="row-gap: 0.1em;">
-              <div><span class="text-muted small"><abbr title="English as an additional language">EAL</abbr>:</span> 67%</div>
-              <div class="progress bg-white justify-content-end" style="height: 5px;">
-                <div class="progress-bar bg-nexus-primary" style="width: 67%"></div>
+        </tr>
+
+        <tr>
+
+          <!-- SCHOOL COLUMN -->
+          <td class="text-left">
+
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.25em;">
+
+                <div class="font-weight-bold"><a href="#" class="text-nexus-primary">Kirknewton Road Nursery School</a></div>
+
+                <div class="text-muted small d-flex flex-column" style="row-gap: 0.25em;">
+
+                  <div class="d-flex" style="column-gap: 1em">
+                    <span><abbr title="Establishment number">DfE</abbr>: 2000</span>
+                    <span><abbr title="Unique reference number">URN</abbr>: 111222</span>
+                  </div>
+
+                  <div><abbr title="Head teacher">HT</abbr>: Ewan Johnson</div>
+
+                </div>
+
+              </div>
+
+              <div class="d-flex" style="gap: 0.25em;">
+                <span class="badge badge-info">Primary</span>
+                <span class="badge badge-primary" data-toggle="tooltip" title="MAT: City Learning Trust">Academy (<abbr title="sponsored">spon.</abbr>)</span>
+              </div>
+
+            </div>
+
+          </td>
+
+          <!-- OFSTED COLUMN -->
+          <td>
+            <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
+              <span class="badge badge-outstanding">Outstanding</span>
+              <span class="text-muted small">24 Aug 2021</span>
+            </div>
+          </td>
+
+          <!-- SCHOOL IMPROVEMENT COLUMN -->
+          <td>
+            <div class="key-value" style="grid-template-columns: 50% 50%;">
+              <span class="text-muted small">RAG</span>
+              <i class="fas fa-lg fa-circle text-req-improvement"></i>
+
+              <span class="text-muted small">Grade</span>
+              <span class="badge badge-good text-truncate">Good</span>
+
+              <span class="text-muted small">Target</span>
+              <span class="badge badge-good text-truncate">Good</span>
+
+              <span class="text-muted small">Category</span>
+              <span class="badge badge-dark text-wrap text-truncate">In Review</span>
+
+            </div>
+
+          </td>
+
+          <!-- NUMBER ON ROLL COLUMN -->
+          <td>
+            <div class="d-flex flex-column align-items-center" style="row-gap: 0.5em;">
+              <span class="">180</span>
+
+              <div class="align-self-stretch">
+                <div class="d-flex justify-content-between small text-muted">
+                  <span><abbr title="Female">F</abbr>: 58.1%</span>
+                  <span><abbr title="Male">M</abbr>: 41.9%</span>
+                </div>
+                <div class="progress" style="height: 5px;">
+                  <div class="progress-bar" style="background-color: rgb(219, 185, 96); width: 58.1%"></div>
+                  <div class="progress-bar" style="background-color: rgb(42, 167, 158); width: 41.9%"></div>
+                </div>
               </div>
             </div>
+          </td>
 
-            <div class="d-flex flex-column" style="row-gap: 0.1em;">
-              <div><span class="text-muted small"><abbr title="Black, Asian and minority ethnic">BME</abbr>:</span> 34%</div>
-              <div class="progress bg-white justify-content-end" style="height: 5px;">
-                <div class="progress-bar bg-nexus-primary" style="width: 34%"></div>
+          <!-- ABSENCE COLUMN -->
+          <td>
+            <div class="key-value" style="grid-template-columns: 50% max-content;">
+              <span class="text-muted small">Overall</span>
+              <span style="justify-self: end;">9.6%</span>
+
+              <span class="text-muted small"><abbr title="Persistent absentees">PA</abbr></span>
+              <span style="justify-self: end;">2.4%</span>
+
+              <!--
+            <span class="text-muted small"><abbr title="Permanent exclusions">Perm.</abbr></span>
+            <span style="justify-self: end;">3</span>
+
+            <span class="text-muted small"><abbr title="Fixed term exclusions">Fixed</abbr></span>
+            <span style="justify-self: end;">19</span>
+            -->
+            </div>
+          </td>
+
+          <!-- DISADVANTAGED COLUMN -->
+          <td>
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Free school meals">FSM</abbr>:</span> 23%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 23%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Pupil Premium">PP</abbr>:</span> 32%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 32%"></div>
+                </div>
+              </div>
+
+            </div>
+          </td>
+
+          <!-- CHARACTERISTICS COLUMN -->
+          <td>
+            <div class="d-flex flex-column" style="row-gap: 0.5em;">
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Special educational needs">SEN</abbr>:</span> 22%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 22%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="English as an additional language">EAL</abbr>:</span> 67%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 67%"></div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column" style="row-gap: 0.1em;">
+                <div><span class="text-muted small"><abbr title="Black, Asian and minority ethnic">BME</abbr>:</span> 34%</div>
+                <div class="progress bg-white justify-content-end" style="height: 5px;">
+                  <div class="progress-bar bg-nexus-primary" style="width: 34%"></div>
+                </div>
+              </div>
+
+            </div>
+          </td>
+
+          <!-- ACTION COLUMN -->
+          <td>
+            <div class="dropdown">
+              <button class="btn btn-nexus-primary dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">School dashboard&hellip;</a>
+                <a class="dropdown-item" href="#">Update categories&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School headlines&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School intelligence&hellip;</a>
+                <a class="dropdown-item" href="#">Insight: School census&hellip;</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Ofsted&hellip;</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Get information about schools&hellip;</a>
               </div>
             </div>
+          </td>
 
-          </div>
-        </td>
-
-        <!-- ACTION COLUMN -->
-        <td>
-          <div class="dropdown">
-            <button class="btn btn-nexus-primary dropdown-toggle" type="button" data-toggle="dropdown">Actions</button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="#">School dashboard&hellip;</a>
-              <a class="dropdown-item" href="#">Update categories&hellip;</a>
-              <a class="dropdown-item" href="#">Insight: School headlines&hellip;</a>
-              <a class="dropdown-item" href="#">Insight: School intelligence&hellip;</a>
-              <a class="dropdown-item" href="#">Insight: School census&hellip;</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Ofsted&hellip;</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Get information about schools&hellip;</a>
-            </div>
-          </div>
-        </td>
+        </tr>
 
       </tbody>
     </table>
