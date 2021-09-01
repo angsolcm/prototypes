@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../../../static/css/bootstrap4/bootstrap-custom.css">
+  <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+  <title></title>
+
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Term Dates</h1>
+
+    <p>Record a local authority's term dates (not holiday dates).</p>
+
+    <div class="row row-cols-3">
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <h6 class="card-header bg-orange text-white">Autumn</h6>
+          <div class="card-body bg-orange-50">
+            <div class="form-group">
+              <label for="half-term-1">Half Term 1</label>
+              <input type="text" id="half-term-1" name="daterange" class="form-control" value="01 Sep 2021 - 22 Oct 2021" />
+            </div>
+            <div class="form-group">
+              <label for="half-term-2">Half Term 2</label>
+              <input type="text" id="half-term-2" name="daterange" class="form-control" value="01 Nov 2021 - 22 Dec 2021" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <h6 class="card-header bg-nephritis text-white">Spring</h6>
+          <div class="card-body bg-nephritis-50">
+            <div class="form-group">
+              <label for="half-term-3">Half Term 3</label>
+              <input type="text" id="half-term-3" name="daterange" class="form-control" value="05 Jan 2022 - 18 Feb 2022" />
+            </div>
+            <div class="form-group">
+              <label for="half-term-4">Half Term 4</label>
+              <input type="text" id="half-term-2" name="daterange" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <h6 class="card-header bg-pomegranate text-white">Summer</h6>
+          <div class="card-body bg-pomegranate-50">
+            <div class="form-group">
+              <label for="half-term-5">Half Term 5</label>
+              <input type="text" id="half-term-5" name="daterange" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="half-term-6">Half Term 6</label>
+              <input type="text" id="half-term-6" name="daterange" class="form-control" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <script>
+    $("input[name='daterange']").daterangepicker({ locale: { format: "DD MMM YYYY" } });
+  </script>
+</body>
+
+</html>

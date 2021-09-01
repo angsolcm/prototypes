@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <title>Hello, world!</title>
+
+  <style>
+    html {
+      font-family: "Open Sans";
+      font-size: 14px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .heading {
+      font-family: "Open Sans Condensed";
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
+
+    .btn {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: "Open Sans Condensed";
+    }
+
+    .text-nexus-primary {
+      color: #9a0d51;
+    }
+
+    .text-nexus-tertiary {
+      color: #d5d6d7;
+    }
+
+    .bg-nexus-primary {
+      background-color: #9a0d51;
+    }
+
+    .bg-nexus-tertiary {
+      background-color: #d5d6d7
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="d-flex align-items-center">
+
+      <div class="d-inline-block my-4">
+        <i class="fas fa-square-full fa-3x mr-4 text-nexus-primary" data-fa-transform="rotate-45"></i>
+      </div>
+
+      <span class="font-weight-bold text-nexus-tertiary mr-4" style="font-size: 300%;">NEXUS</span>
+
+      <div class="text-nexus-tertiary small">
+        <div>National Consortium for Examination Results</div>
+        <div>Community Interest Company</div>
+      </div>
+
+      <div class="dropdown ml-auto align-self-start">
+        <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Nexus</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+        </div>
+      </div>
+
+      <div class="dropdown align-self-start">
+        <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown">NCER</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+        </div>
+      </div>
+
+      <div class="dropdown align-self-start mr-3">
+        <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Admin</button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-sm mr-2 align-self-start text-white rounded-bottom bg-nexus-primary"><i class="fas fa-question fa-fw"></i></button>
+
+      <button type="button" class="btn btn-dark btn-sm mr-2 align-self-start"><i class="fas fa-user fa-fw"></i></button>
+
+      <button type="button" class="btn btn-dark btn-sm align-self-start"><i class="fas fa-sign-out-alt fa-fw"></i></button>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid bg-dark mb-1">
+    <div class="container">
+      <ul class="list-inline font-weight-bold text-white py-2 mb-0">
+        <li class="list-inline-item"><i class="fas fa-home"></i></li>
+        <li class="list-inline-item">KEYPAS</li>
+        <li class="list-inline-item">Nova</li>
+        <li class="list-inline-item">Insight</li>
+        <li class="list-inline-item">Broadcast</li>
+        <li class="list-inline-item">Pendulum</li>
+        <li class="list-inline-item">Schools</li>
+        <li class="list-inline-item">KPIs</li>
+        <li class="list-inline-item">Alerts</li>
+        <li class="list-inline-item">Maps</li>
+        <li class="list-inline-item">Watchsted</li>
+        <li class="list-inline-item">Forum</li>
+        <li class="list-inline-item">Documents</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-nexus-primary mb-4" style="height: 5px;"></div>
+
+  <div class="container">
+
+    <div class="mb-4 d-flex align-items-center">
+      <h1 class="mb-0 mr-3">Pupil Destinations</h1>
+      <select class="form-control form-control-lg w-auto">
+        <option>2021/22</option>
+        <option>2022/23</option>
+      </select>
+      <button type="button" class="ml-auto btn bg-nexus-primary text-white">Import destination data</button>
+    </div>
+
+    <div class="card mb-4 bg-light">
+      <div class="card-body">
+
+        <h5 class="mb-2">Filters</h5>
+
+        <div class="row">
+          <div class="col">
+            <label>Destination</label>
+            <select class="form-control">
+              <option>- ignore -</option>
+              <option>[Any in-boundary school]</option>
+              <option>[Any out-of-boundary school]</option>
+              <option>[Unknown]</option>
+              <option>Archbishop Beck Catholic College</option>
+              <option>Archbishop Blanch School</option>
+              <option>Broadgreen International School, A Technology College</option>
+              <option>Broughton Hall Catholic High School</option>
+              <option>Calderstones School</option>
+              <option>&hellip;</option>
+            </select>
+          </div>
+          <div class="col">
+            <label>Data status</label>
+            <select class="form-control">
+              <option>- ignore -</option>
+              <option>Full</option>
+              <option>Partial</option>
+              <option>None</option>
+            </select>
+          </div>
+          <div class="col">
+            <label>UPN</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col">
+            <label>Surname</label>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col-12 text-right mt-3">
+            <button type="button" class="btn bg-nexus-primary text-white">Filter</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-5 bg-light">
+      <div class="card-body">
+
+        <div class="row align-items-center mb-4">
+
+          <div class="col-8">
+            <h3 class="mb-0">All Saints' Catholic Voluntary Aided Primary School</h4>
+          </div>
+
+          <div class="col-4">
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 74%;"></div>
+              <div class="progress-bar bg-warning" style="width: 18%;"></div>
+              <div class="progress-bar bg-danger" style="width: 8%;"></div>
+            </div>
+            <ul class="list-inline small mb-0 text-muted text-center">
+              <li class="list-inline-item"><i class="fas fa-circle fa-xs text-success"></i> In-boundary dest.</li>
+              <li class="list-inline-item"><i class="fas fa-circle fa-xs text-warning"></i> Out-boundary dest.</li>
+              <li class="list-inline-item"><i class="fas fa-circle fa-xs text-danger"></i> Unknown dest.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <table class="table table mb-0 bg-white border" style="table-layout: fixed;">
+          <thead class="thead-light">
+            <tr>
+              <th>Pupil</th>
+              <th>Destination</th>
+              <th style="width: 15ch;"></th>
+              <th style="width: 21ch;"></th>
+              <th style="width: 14ch;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="font-weight-bold">CARL CHAN</div>
+                <div class="small text-muted">F886231214011</div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><i class="fas fa-circle text-success"></i> St Julie's Catholic High School</div>
+                <div class="small text-muted">4790</div>
+              </td>
+              <td>
+                <span class="badge badge-warning"><i class="fas fa-star-half-alt"></i> Partial data</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white" disabled>Change Destination</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">View Data</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">JUNIOR MANSFIELD</div>
+                <div class="small text-muted">R860234810001</div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><i class="fas fa-circle text-success"></i> St John Bosco Arts College</div>
+                <div class="small text-muted">4794</div>
+              </td>
+              <td>
+                <span class="badge badge-success"><i class="fas fa-star"></i> Full data</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white" disabled>Change Destination</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">View Data</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">SEAN ADAMSON</div>
+                <div class="small text-muted">R928305013015</div>
+              </td>
+              <td>
+                <div><i class="fas fa-circle text-warning"></i> Out-of-boundary destination</div>
+                <div class="small text-muted"></div>
+              </td>
+              <td>
+                <span class="badge badge-light">Not applicable</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">Change Destination</button>
+              </td>
+              <td>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">HABIB COLLINS</div>
+                <div class="small text-muted">B333213511088</div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><i class="fas fa-circle text-success"></i> St Julie's Catholic High School</div>
+                <div class="small text-muted">4790</div>
+              </td>
+              <td>
+                <span class="badge badge-danger"><i class="far fa-star"></i> No data</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">Change Destination</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white" disabled>View Data</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">JERMAINE CARR</div>
+                <div class="small text-muted">B938335414027</div>
+              </td>
+              <td>
+                <div><i class="fas fa-circle text-danger"></i> Unknown destination</div>
+                <div class="small text-muted"></div>
+              </td>
+              <td>
+                <span class="badge badge-light">Not applicable</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">Change Destination</button>
+              </td>
+              <td>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="card shadow-sm mb-5 bg-light">
+      <div class="card-body">
+
+        <div class="row align-items-center mb-4">
+
+          <div class="col-8">
+            <h3 class="mb-0">Anfield Road Primary School</h4>
+          </div>
+
+          <div class="col-4">
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 62%;"></div>
+              <div class="progress-bar bg-warning" style="width: 36%;"></div>
+              <div class="progress-bar bg-danger" style="width: 2%;"></div>
+            </div>
+            <ul class="list-inline small mb-0 text-muted text-center">
+              <li class="list-inline-item"><i class="fas fa-circle fa-xs text-success"></i> In-boundary dest.</li>
+              <li class="list-inline-item"><i class="fas fa-circle fa-xs text-warning"></i> Out-boundary dest.</li>
+              <li class="list-inline-item"><i class="fas fa-circle fa-xs text-danger"></i> Unknown dest.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <table class="table table mb-0 bg-white border" style="table-layout: fixed;">
+          <thead class="thead-light">
+            <tr>
+              <th>Pupil</th>
+              <th>Destination</th>
+              <th style="width: 15ch;"></th>
+              <th style="width: 21ch;"></th>
+              <th style="width: 14ch;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="font-weight-bold">LARISSA WYATT</div>
+                <div class="small text-muted">J881287910004</div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><i class="fas fa-circle text-success"></i> St Julie's Catholic High School</div>
+                <div class="small text-muted">4790</div>
+              </td>
+              <td>
+                <span class="badge badge-warning"><i class="fas fa-star-half-alt"></i> Partial data</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white" disabled>Change Destination</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">View Data</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">SIDRA BROWNE</div>
+                <div class="small text-muted">U909260708046</div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><i class="fas fa-circle text-success"></i> St John Bosco Arts College</div>
+                <div class="small text-muted">4794</div>
+              </td>
+              <td>
+                <span class="badge badge-success"><i class="fas fa-star"></i> Full data</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white" disabled>Change Destination</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">View Data</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">FABIAN BAINS</div>
+                <div class="small text-muted">H204263610047</div>
+              </td>
+              <td>
+                <div><i class="fas fa-circle text-warning"></i> Out-of-boundary destination</div>
+                <div class="small text-muted"></div>
+              </td>
+              <td>
+                <span class="badge badge-light">Not applicable</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">Change Destination</button>
+              </td>
+              <td>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="font-weight-bold">MOHAMAD VICKERS</div>
+                <div class="small text-muted">B830302512003</div>
+              </td>
+              <td>
+                <div class="font-weight-bold"><i class="fas fa-circle text-success"></i> St Julie's Catholic High School</div>
+                <div class="small text-muted">4790</div>
+              </td>
+              <td>
+                <span class="badge badge-danger"><i class="far fa-star"></i> No data</span>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white">Change Destination</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-block bg-nexus-primary text-white" disabled>View Data</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
