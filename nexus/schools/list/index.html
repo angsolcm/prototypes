@@ -53,11 +53,12 @@
         <tr>
           <th class="text-left" style="width: 20%;">School</th>
           <th class="text-center">Ofsted</th>
-          <th class="text-center"><abbr title="School improvement">Sch. Imp.</abbr></th>
+          <th class="text-left"><abbr title="School improvement">Sch. Imp.</abbr></th>
           <th class="text-center"><abbr title="Number on roll">NOR</abbr></abbr></th>
           <th class="text-center">Absence</th>
           <th><abbr title="Disadvantaged">Disad.</abbr></th>
           <th>Characteristics</th>
+          <th style="width: 120px;"></th>
         </tr>
       </thead>
       <tbody>
@@ -105,6 +106,36 @@
 
           <!-- SCHOOL IMPROVEMENT COLUMN -->
           <td>
+
+            <!-- <div class="text-left" style="display: grid; grid-template-columns: max-content max-content 1fr; column-gap: 0.25em; row-gap: 0.5em;"> -->
+              <div class="d-flex flex-column text-left small" style="row-gap: 0.5em;">
+                <div class="font-weight-bold"><i class="fas fa-circle text-req-improvement"></i> RAG</div>
+
+                <div>
+                  <div class="font-weight-bold"><i class="fas fa-circle text-req-improvement"></i> Grade</div>
+                  <div class="text-muted text-truncate" title="Needs intervention to maintain G or improve from R" data-toggle="tooltip">Needs intervention to maintain G or improve from R</div>
+                </div>
+
+                <div>
+                  <div class="font-weight-bold"><i class="fas fa-circle text-req-improvement"></i> Target</div>
+                  <div class="text-muted text-truncate" title="Good-Vulnerable to slipping in to being judged RI" data-toggle="tooltip">Good-Vulnerable to slipping in to being judged RI</div>
+                </div>
+
+                <div>
+                  <div class="font-weight-bold">Category</div>
+                  <div class="text-muted text-truncate" title="Requires Improvement - Static/Declining Trends" data-toggle="tooltip">Requires Improvement - Static/Declining Trends</div>
+                </div>
+              </div>
+              
+
+              
+
+              
+
+              
+            <!-- </div> -->
+
+            <!--
             <div class="key-value" style="grid-template-columns: 50% 50%;">
               <span class="text-muted small">RAG</span>
               <i class="fas fa-lg fa-circle text-req-improvement"></i>
@@ -119,6 +150,7 @@
               <span class="badge badge-dark text-wrap text-truncate">In Review</span>
 
             </div>
+            -->
 
           </td>
 
@@ -218,8 +250,13 @@
                 <a class="dropdown-item" href="#">Insight: School headlines&hellip;</a>
                 <a class="dropdown-item" href="#">Insight: School intelligence&hellip;</a>
                 <a class="dropdown-item" href="#">Insight: School census&hellip;</a>
-                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Ofsted&hellip;</a>
-                <a class="dropdown-item" href="#"><i class="fas fa-xs fa-external-link-alt"></i> Get information about schools&hellip;</a>
+                <a class="dropdown-item d-flex justify-content-between" href="#">
+                  <span>Ofsted&hellip;</span>
+                  <i class="fas fa-xs fa-external-link-alt"></i>
+                </a>
+                <a class="dropdown-item d-flex justify-content-between" href="#">
+                  <span>Get information about schools&hellip;</span>
+                  <i class="fas fa-xs fa-external-link-alt"></i></a>
               </div>
             </div>
           </td>
