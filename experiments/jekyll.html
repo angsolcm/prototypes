@@ -17,6 +17,14 @@ food: Pizza
   <body>
     <div class="container">
       <h1>{{ page.food }}</h1>
+
+      {% for item in array limit:2 %}
+        <div class="card">
+          <div class="card-body">
+            <script>document.write(Math.random())</script>
+          </div>
+        </div>
+      {% endfor %}
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
   </body>
