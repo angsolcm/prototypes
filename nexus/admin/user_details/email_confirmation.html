@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../../static/css/bootstrap5/bootstrap-custom.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title></title>
+
+  <style>
+    h1, h2, h3, h4, h5, h6, .btn {
+      font-family: "Open Sans Condensed";
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 1em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container my-5">
+
+    <h4>User Details: Email field</h4>
+
+    <h5>Distinct Card Ideas</h5>
+
+    <h6>Unconfirmed</h6>
+
+    <div class="card bg-light shadow-sm w-50 my-4">
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="form-label">Email Address</h5>
+
+          <div class="input-group">
+            <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
+            <span class="input-group-text">
+              <span class="badge bg-danger">Unconfirmed</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end" style="column-gap: 1em;">
+          <button class="btn btn-nexus-primary">Change Email</button>
+          <button class="btn btn-nexus-secondary">Confirm Email</button>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="my-3">
+
+    <h6>Pending confirmation</h6>
+
+    <div class="card bg-light shadow-sm w-50 my-4">
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="form-label">Email Address</h5>
+
+          <div class="input-group">
+            <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
+            <span class="input-group-text">
+              <span class="badge bg-warning text-dark">Pending confirmation</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end" style="column-gap: 1em;">
+          <button class="btn btn-nexus-primary">Change Email</button>
+          <button class="btn btn-nexus-secondary">Resend Confirmation</button>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="my-3">
+
+    <h6>Confirmed</h6>
+
+    <div class="card bg-light shadow-sm w-50 my-4">
+      <div class="card-body">
+        <div class="mb-3">
+          <h5 class="form-label">Email Address</h5>
+
+          <div class="input-group">
+            <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
+            <span class="input-group-text">
+              <span class="badge bg-success">Confirmed</span>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end" style="column-gap: 1em;">
+          <button class="btn btn-nexus-primary">Change Email</button>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h5>Inline ideas</h5>
+
+    <h6>Unconfirmed</h6>
+
+    <div class="row align-items-center">
+      <div class="col-2">
+        <label class="col-form-label">Email</label>
+      </div>
+      <div class="col-7">
+        <div class="input-group">
+          <input type="text" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly />
+          <span class="input-group-text"><span class="badge bg-danger">Unconfirmed</span></span>
+          <button class="btn btn-nexus-primary border-dark" type="button" title="Send confirmation email"><i class="fas fa-check-circle"></i> Confirm</button>
+          <button class="btn btn-nexus-primary border-dark" type="button" title="Change email address"><i class="fas fa-edit"></i> Update</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h6>Pending confirmation</h6>
+
+    <div class="row align-items-center">
+      <div class="col-2">
+        <label class="col-form-label">Email</label>
+      </div>
+      <div class="col-7">
+        <div class="input-group">
+          <input type="text" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly />
+          <span class="input-group-text"><span class="badge bg-warning text-dark">Pending confirmation</span></span>
+          <button class="btn btn-nexus-primary border-dark" type="button" title="Resend confirmation email"><i class="fas fa-envelope"></i> Resend</button>
+          <button class="btn btn-nexus-primary border-dark" type="button" title="Change email address"><i class="fas fa-edit"></i> Update</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <h6>Confirmed</h6>
+
+    <div class="row align-items-center">
+      <div class="col-2">
+        <label class="col-form-label">Email</label>
+      </div>
+      <div class="col-7">
+        <div class="input-group">
+          <input type="text" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly />
+          <span class="input-group-text"><span class="badge bg-success">Confirmed</span></span>
+          <button class="btn btn-nexus-primary border-dark" type="button" title="Change email address"><i class="fas fa-edit"></i> Update</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
