@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../../../static/css/bootstrap5/bootstrap-custom.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title></title>
+
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Open Sans Condensed";
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container my-5">
+    <div class="card" style="border-top: 4px solid #9a0d51; background-color: #f8f9fa;">
+      <div class="card-body">
+
+        <h4 class="mb-4">Disadvantage &amp; Pupil Premium Characteristics</h4>
+
+        <div class="row">
+          <div class="col-6 order-1">
+
+            <div class="card bg-white shadow">
+              <div class="card-body">
+                <h5>Disadvantaged Pupils</h5>
+
+                <div id="chart_div" class="mb-3"></div>
+
+                <div style="color: #2c3e50;">
+                  <p>If we assume all unmatched pupils are not disadvantaged, <strong>90.4% of your CLA cohort are disadvantaged</strong>. This is below the national average of <strong>93%</strong></p>
+
+                  <p class="mb-1">Of the CLA cohort with matched pupil premium data (712 pupils):</p>
+                  <ul class="mb-0">
+                    <li><strong>19.3% (141 pupils)</strong> are <strong>FSM6</strong>; above the national average of <strong>15%</strong></li>
+                    <li><strong>50.2% (363 pupils)</strong> are <strong>Service Children</strong>; below the national average of <strong>51%</strong></li>
+                    <li><strong>17.1% (128 pupils)</strong> are <strong>Adopted</strong>; above the national average of <strong>16%</strong></li>
+                    <li><strong>94.9% (702 pupils)</strong> are <strong>Looked After</strong>; below the national average of <strong>97%</strong></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card bg-white shadow mb-4">
+              <div class="card-body">
+                <h5>Matched Pupils</h5>
+
+                <div style="color: #2c3e50;">
+                  <div>We can <strong>match 712 of your CLA cohort (92%) to pupil premium data</strong> imported into Nexus by your LA and others.</div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card bg-white shadow">
+              <div class="card-body">
+                <h5>Pupil Premium</h5>
+
+                <div class="d-flex justify-content-center">
+                  <div class="d-inline-flex flex-column align-items-center mb-3 bg-light rounded p-4" style="font-family: 'Open Sans Condensed';">
+                    <span class="text-muted fw-bold">TOTAL</span>
+                    <span class="text-nexus-primary" style="font-size: 300%; font-weight: 700;">£1,328,893</span>
+
+                    <div class="w-100 mb-2"></div>
+
+                    <span class="text-muted fw-bold small">AVG. PER PUPIL</span>
+                    <span class="text-nexus-primary" style="font-family: 'Open Sans Condensed'; font-size: 200%; font-weight: 700;">£1,178</span>
+                  </div>
+                </div>
+
+                <p>The disadvantaged pupils of your CLA cohort contribute a share of £1,328,893 to the budgets of their educating local authorities/schools.</p>
+                
+                <p class="mb-0">Per disadvantaged pupil the average contribution is £1,178.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    google.charts.load('current', { packages: ['corechart', 'bar'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Component');
+      data.addColumn('number', 'CLA Cohort (LA)');
+      data.addColumn({ type: "string", role: 'annotation' });
+      data.addColumn('number', 'NCER National CLA');
+      data.addColumn({ type: "string", role: 'annotation' });
+
+      data.addRows([
+        ['Disadvantaged', 96.8, "96.8%", 98, "98%"],
+        ['FSM6', 19.3, "19.3%", 15, "15%"],
+        ['Service', 50.2, "50.2%", 51, "51%"],
+        ['Adopted', 17.1, "17.1%", 16, "16%"],
+        ['Looked After', 94.9, "94.9%", 97, "97%"]
+      ]);
+
+      var options = {
+        chartArea: { backgroundColor: "#f3f3f3" },
+        colors: ["#7b3186", "#000000"],
+        legend: { position: "top" },
+        vAxis: { title: "% of cohort" },
+        annotations: {
+          alwaysOutside: true,
+          boxStyle: {
+            fillColor: "#ffffff",
+            fillOpacity: 0.8
+          },
+          textStyle: {
+            fontSize: 8
+          }
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+
+  </script>
+</body>
+
+</html>
