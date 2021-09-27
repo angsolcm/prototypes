@@ -12,14 +12,16 @@
   <title></title>
 
   <style>
-    h1, h2, h3, h4, h5, h6, .btn {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .btn {
       font-family: "Open Sans Condensed";
       font-weight: 700;
       text-transform: uppercase;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      margin-bottom: 1em;
     }
 
   </style>
@@ -28,134 +30,177 @@
 <body>
   <div class="container my-5">
 
-    <h4>User Details: Email field</h4>
+    <h1>Email Address Confirmation</h1>
 
-    <h5>Distinct Card Ideas</h5>
-
-    <h6>Unconfirmed</h6>
-
-    <div class="card bg-light shadow-sm w-50 my-4">
-      <div class="card-body">
-        <div class="mb-3">
-          <h5 class="form-label">Email Address</h5>
-
-          <div class="input-group">
-            <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
-            <span class="input-group-text">
-              <span class="badge bg-danger">Unconfirmed</span>
+    <div class="row">
+      <div class="col">
+        <h2>Step 0: Initial state</h2>
+      </div>
+      <div class="col">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h5 class="form-label">Email Address</h5>
+              <div class="input-group">
+                <input type="email" class="form-control" value="t.doran@liverpool.gov.uk" disabled readonly>
+                <span class="input-group-text">
+                  <span class="badge bg-success">Confirmed</span>
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end" style="column-gap: 1em;">
+              <button class="btn btn-nexus-primary">Change Email</button>
+            </div>
           </div>
-        </div>
-
-        <div class="d-flex justify-content-end" style="column-gap: 1em;">
-          <button class="btn btn-nexus-primary">Change Email</button>
-          <button class="btn btn-nexus-secondary">Confirm Email</button>
-        </div>
-
-      </div>
-    </div>
-
-    <hr class="my-3">
-
-    <h6>Pending confirmation</h6>
-
-    <div class="card bg-light shadow-sm w-50 my-4">
-      <div class="card-body">
-        <div class="mb-3">
-          <h5 class="form-label">Email Address</h5>
-
-          <div class="input-group">
-            <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
-            <span class="input-group-text">
-              <span class="badge bg-warning text-dark">Pending confirmation</span>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-end" style="column-gap: 1em;">
-          <button class="btn btn-nexus-primary">Change Email</button>
-          <button class="btn btn-nexus-secondary">Resend Confirmation</button>
-        </div>
-
-      </div>
-    </div>
-
-    <hr class="my-3">
-
-    <h6>Confirmed</h6>
-
-    <div class="card bg-light shadow-sm w-50 my-4">
-      <div class="card-body">
-        <div class="mb-3">
-          <h5 class="form-label">Email Address</h5>
-
-          <div class="input-group">
-            <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
-            <span class="input-group-text">
-              <span class="badge bg-success">Confirmed</span>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-end" style="column-gap: 1em;">
-          <button class="btn btn-nexus-primary">Change Email</button>
-        </div>
-
-      </div>
-    </div>
-
-    <hr class="my-5">
-
-    <h5>Inline ideas</h5>
-
-    <h6>Unconfirmed</h6>
-
-    <div class="row align-items-center">
-      <div class="col-2">
-        <label class="col-form-label">Email</label>
-      </div>
-      <div class="col-7">
-        <div class="input-group">
-          <input type="text" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly />
-          <span class="input-group-text"><span class="badge bg-danger">Unconfirmed</span></span>
-          <button class="btn btn-nexus-primary border-dark" type="button" title="Send confirmation email"><i class="fas fa-check-circle"></i> Confirm</button>
-          <button class="btn btn-nexus-primary border-dark" type="button" title="Change email address"><i class="fas fa-edit"></i> Update</button>
         </div>
       </div>
     </div>
 
     <hr class="my-5">
 
-    <h6>Pending confirmation</h6>
-
-    <div class="row align-items-center">
-      <div class="col-2">
-        <label class="col-form-label">Email</label>
+    <div class="row">
+      <div class="col">
+        <h2>Step 1: User clicked "Change Email"</h2>
+        <p class="small text-muted">Clicking "Cancel" returns component to Step 0.</p>
       </div>
-      <div class="col-7">
-        <div class="input-group">
-          <input type="text" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly />
-          <span class="input-group-text"><span class="badge bg-warning text-dark">Pending confirmation</span></span>
-          <button class="btn btn-nexus-primary border-dark" type="button" title="Resend confirmation email"><i class="fas fa-envelope"></i> Resend</button>
-          <button class="btn btn-nexus-primary border-dark" type="button" title="Change email address"><i class="fas fa-edit"></i> Update</button>
+      <div class="col">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h5 class="form-label">Email Address</h5>
+              <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk">
+            </div>
+            <div class="d-flex justify-content-end" style="column-gap: 1em;">
+              <button class="btn btn-outline-nexus-primary">Cancel</button>
+              <button class="btn btn-nexus-primary">Save</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <hr class="my-5">
 
-    <h6>Confirmed</h6>
-
-    <div class="row align-items-center">
-      <div class="col-2">
-        <label class="col-form-label">Email</label>
+    <div class="row">
+      <div class="col">
+        <h2>Step 1a: User clicked "Save", but the address is already in use</h2>
+        <p class="small text-muted">Clicking "Cancel" returns component to Step 0.</p>
       </div>
-      <div class="col-7">
-        <div class="input-group">
-          <input type="text" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly />
-          <span class="input-group-text"><span class="badge bg-success">Confirmed</span></span>
-          <button class="btn btn-nexus-primary border-dark" type="button" title="Change email address"><i class="fas fa-edit"></i> Update</button>
+      <div class="col">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h5 class="form-label">Email Address</h5>
+              <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk">
+            </div>
+            <div class="alert alert-warning mb-3">
+              The email address theodore.doran@liverpool.gov.uk is already in use. Please save another or click Cancel.
+            </div>
+            <div class="d-flex justify-content-end" style="column-gap: 1em;">
+              <button class="btn btn-outline-nexus-primary">Cancel</button>
+              <button class="btn btn-nexus-primary">Save</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col">
+        <h2>Step 2: User clicked "Save"</h2>
+        <p class="small text-muted">Clicking "Change Email" returns component to Step 1.</p>
+        <p class="small text-muted">Clicking "Resend Confirmation" returns visual feedback that an email has been sent.</p>
+      </div>
+      <div class="col">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h5 class="form-label">Email Address</h5>
+              <div class="input-group">
+                <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
+                <div class="input-group-text">
+                  <span class="badge bg-warning text-dark">Pending confirmation</span>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-warning mb-3">
+              Confirm this new address by following the instructions we've sent in an email to theodore.doran@liverpool.gov.uk.
+            </div>
+            <div class="d-flex justify-content-end" style="column-gap: 1em;">
+              <button class="btn btn-nexus-secondary">Resend Confirmation</button>
+              <button class="btn btn-nexus-primary">Change Email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col">
+        <h2>Step 2a: User clicked "Resend Confirmation"</h2>
+        <p class="small text-muted">The additional alert box would be displayed upon clicking the Resend Confirmation button, but not be displayed after revisiting the page.</p>
+      </div>
+      <div class="col">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h5 class="form-label">Email Address</h5>
+              <div class="input-group">
+                <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
+                <div class="input-group-text">
+                  <span class="badge bg-warning text-dark">Pending confirmation</span>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-warning mb-3">
+              Confirm this new address by following the instructions we've sent in an email to theodore.doran@liverpool.gov.uk.
+            </div>
+            <div class="alert alert-info mb-3">
+              Another confirmation email has been sent to theodore.doran@liverpool.gov.uk. Please check your inbox and junk/spam folders.
+            </div>
+            <div class="d-flex justify-content-end" style="column-gap: 1em;">
+              <button class="btn btn-nexus-secondary">Resend Confirmation</button>
+              <button class="btn btn-nexus-primary">Change Email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col">
+        <h2>Step 2b: Link expired</h2>
+        <p class="small text-muted"></p>
+      </div>
+      <div class="col">
+        <div class="card bg-light shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h5 class="form-label">Email Address</h5>
+              <div class="input-group">
+                <input type="email" class="form-control" value="theodore.doran@liverpool.gov.uk" disabled readonly>
+                <div class="input-group-text">
+                  <span class="badge bg-danger">Link expired</span>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-warning mb-3">
+              Your email address is still unconfirmed. Blah blah blah...
+            </div>
+            <div class="d-flex justify-content-end" style="column-gap: 1em;">
+              <button class="btn btn-nexus-secondary">Send Confirmation</button>
+              <button class="btn btn-nexus-primary">Change Email</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
