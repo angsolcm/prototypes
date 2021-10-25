@@ -25,6 +25,12 @@
       color: #2c3e50;
     }
 
+    button {
+      font-family: "Open Sans Condensed";
+      text-transform: uppercase;
+      font-weight: bold !important;
+    }
+
   </style>
 </head>
 
@@ -33,27 +39,103 @@
     <div class="card" style="border-top: 4px solid #9a0d51; background-color: #f8f9fa;">
       <div class="card-body">
 
-        <h4 class="mb-4">Disadvantage &amp; Pupil Premium Characteristics</h4>
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h4 class="mb-0">Pupil Premium</h4>
+          <button type="button" class="btn btn-outline-nexus-primary" data-bs-toggle="modal" data-bs-target="#moreInfo"><i class="fas fa-info-circle me-2"></i>More Info</button>
+        </div>
+        
 
         <div class="row">
           <div class="col-6 order-1">
 
             <div class="card bg-white shadow">
               <div class="card-body">
-                <h5>Disadvantaged Pupils</h5>
+                <h5>Eligibility Criteria</h5>
 
                 <div id="chart_div" class="mb-3"></div>
 
                 <div style="color: #2c3e50;">
-                  <p>If we assume all unmatched pupils are not disadvantaged, <strong>90.4% of your CLA cohort are disadvantaged</strong>. This is below the national average of <strong>93%</strong></p>
+                  <p><strong>90.4% of your CLA cohort are eligible for pupil premium</strong>. This is below the national average of <strong>93%</strong></p>
 
-                  <p class="mb-1">Of the CLA cohort with matched pupil premium data (712 pupils):</p>
-                  <ul class="mb-0">
-                    <li><strong>19.3% (141 pupils)</strong> are <strong>FSM6</strong>; above the national average of <strong>15%</strong></li>
-                    <li><strong>50.2% (363 pupils)</strong> are <strong>Service Children</strong>; below the national average of <strong>51%</strong></li>
-                    <li><strong>17.1% (128 pupils)</strong> are <strong>Adopted</strong>; above the national average of <strong>16%</strong></li>
-                    <li><strong>94.9% (702 pupils)</strong> are <strong>Looked After</strong>; below the national average of <strong>97%</strong></li>
+                  <p class="d-none">Of the CLA cohort with matched pupil premium data (712 pupils):</p>
+                  <ul class="d-none">
+                    <li><strong>95.2% (709 pupils)</strong> are <strong>Disadvantaged</strong>; 2.8% (20 pupils) above the national average of <strong>92%</strong></li>
+                    <li><strong>19.3% (141 pupils)</strong> are <strong>FSM6</strong>; 4.3% (31 pupils) above the national average of <strong>15%</strong></li>
+                    <li><strong>17.1% (128 pupils)</strong> are <strong>Adopted</strong>; 1.1% (8 pupils) above the national average of <strong>16%</strong></li>
+                    <li><strong>94.9% (702 pupils)</strong> are <strong>Looked After</strong>; 2.1% (15 pupils) below the national average of <strong>97%</strong></li>
+                    <li><strong>50.2% (363 pupils)</strong> are <strong>Service Children</strong>; 0.8% (6 pupils) below the national average of <strong>51%</strong></li>
                   </ul>
+
+                  <table class="table text-end" style="table-layout: fixed;">
+                    <tr>
+                      <th class="text-start">Elig. Criterion</th>
+                      <th>LA</th>
+                      <th>NCER Nat. Avg.</th>
+                      <th>Gap</th>
+                    </tr>
+                    <tr>
+                      <th class="text-start">Disadvantaged</th>
+                      <td>
+                        <div>95.2%</div>
+                        <div class="small text-muted">709 pupils</div>
+                      </td>
+                      <td>92%</td>
+                      <td>
+                        <div>+2.8%</div>
+                        <div class="small text-muted">20 pupils</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-start">FSM6</th>
+                      <td>
+                        <div>19.3%</div>
+                        <div class="small text-muted">141 pupils</div>
+                      </td>
+                      <td>15%</td>
+                      <td>
+                        <div>+4.3%</div>
+                        <div class="small text-muted">31 pupils</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-start">Adopted</th>
+                      <td>
+                        <div>17.1%</div>
+                        <div class="small text-muted">128 pupils</div>
+                      </td>
+                      <td>16%</td>
+                      <td>
+                        <div>+1.1%</div>
+                        <div class="small text-muted">8 pupils</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-start">Looked After</th>
+                      <td>
+                        <div>94.9%</div>
+                        <div class="small text-muted">702 pupils</div>
+                      </td>
+                      <td>97%</td>
+                      <td>
+                        <div>-2.1%</div>
+                        <div class="small text-muted">15 pupils</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="text-start">Service</th>
+                      <td>
+                        <div>50.2%</div>
+                        <div class="small text-muted">363 pupils</div>
+                      </td>
+                      <td>51%</td>
+                      <td>
+                        <div>-0.8%</div>
+                        <div class="small text-muted">6 pupils</div>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <p class="mb-0"><strong>12.1% (106)</strong> of pupils meet <strong>more than 1 pupil premium eligibility criterion</strong>; 9.2% (66 pupils) above the national average of 2.9%</p>
                 </div>
 
               </div>
@@ -63,10 +145,11 @@
           <div class="col-6">
             <div class="card bg-white shadow mb-4">
               <div class="card-body">
-                <h5>Matched Pupils</h5>
+                <h5>Data Matching</h5>
 
                 <div style="color: #2c3e50;">
-                  <div>We can <strong>match 712 of your CLA cohort (92%) to pupil premium data</strong> imported into Nexus by your LA and others.</div>
+                  <p>We can <strong>match 712 of your CLA cohort (92%) to pupil premium data</strong> imported into Nexus by your LA and other LAs.</p>
+                  <p class="mb-0">All unmatched pupils are assumed not to be eligible for pupil premium funding.</p>
                 </div>
 
               </div>
@@ -74,29 +157,49 @@
 
             <div class="card bg-white shadow">
               <div class="card-body">
-                <h5>Pupil Premium</h5>
+                <h5>Funding</h5>
 
-                <div class="d-flex justify-content-center">
-                  <div class="d-inline-flex flex-column align-items-center mb-3 bg-light rounded p-4" style="font-family: 'Open Sans Condensed';">
-                    <span class="text-muted fw-bold">TOTAL</span>
-                    <span class="text-nexus-primary" style="font-size: 300%; font-weight: 700;">£1,328,893</span>
-
-                    <div class="w-100 mb-2"></div>
-
-                    <span class="text-muted fw-bold small">AVG. PER PUPIL</span>
-                    <span class="text-nexus-primary" style="font-family: 'Open Sans Condensed'; font-size: 200%; font-weight: 700;">£1,178</span>
+                <div class="bg-clouds-400 rounded p-3 text-center fw-bold mb-3" style="font-family: 'Open Sans Condensed';">
+                  <div class="row">
+                    <div class="col-12 text-muted">TOTAL</div>
+                    <div class="col-12 text-nexus-primary" style="font-size: 300%;">£1,328,893</div>
+                    <div class="w-100 my-3"></div>
+                    <div class="col-6 text-muted small">FSM6</div>
+                    <div class="col-6 text-muted small">ADOPTED</div>
+                    <div class="col-6 text-nexus-primary" style="font-size: 200%;">£386,122</div>
+                    <div class="col-6 text-nexus-primary" style="font-size: 200%;">£21,199</div>
+                    <div class="w-100 my-2"></div>
+                    <div class="col-6 text-muted small">LOOKED AFTER</div>
+                    <div class="col-6 text-muted small">SERVICE</div>
+                    <div class="col-6 text-nexus-primary" style="font-size: 200%;">£441,543</div>
+                    <div class="col-6 text-nexus-primary" style="font-size: 200%;">£108,881</div>
                   </div>
                 </div>
 
-                <p>The disadvantaged pupils of your CLA cohort contribute a share of £1,328,893 to the budgets of their educating local authorities/schools.</p>
+                <p>Pupil premium funding contributes a share of <strong>£1,328,893</strong> to the budgets of the pupils' educating local authorities/schools.</p>
                 
-                <p class="mb-0">Per disadvantaged pupil the average contribution is £1,178.</p>
+                <p class="mb-0">Pupils meeting the looked after pupil premium eligibility criterion contribute <strong>£441,543</strong> in funding. The <strong>488</strong> pupils educated within your local authority make up <strong>£220,772</strong> of this amount.</p>
 
               </div>
             </div>
           </div>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="moreInfo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Help text about&hellip;</p>
+          <ul>
+            <li>&hellip;links to the DfE conditions of grant</li>
+            <li>&hellip;CLA pupils aren't necessarily Pupil Premium because of reporting lag</li>
+          </ul>
+          <p>etc.&hellip;</p>
+        </div>
       </div>
     </div>
   </div>
@@ -117,9 +220,9 @@
       data.addRows([
         ['Disadvantaged', 96.8, "96.8%", 98, "98%"],
         ['FSM6', 19.3, "19.3%", 15, "15%"],
-        ['Service', 50.2, "50.2%", 51, "51%"],
         ['Adopted', 17.1, "17.1%", 16, "16%"],
-        ['Looked After', 94.9, "94.9%", 97, "97%"]
+        ['Looked After', 94.9, "94.9%", 97, "97%"],
+        ['Service', 50.2, "50.2%", 51, "51%"]
       ]);
 
       var options = {
