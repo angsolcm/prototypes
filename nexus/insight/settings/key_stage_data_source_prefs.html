@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../../static/css/bootstrap5/bootstrap-custom.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <title>Prototypes - Nexus - Insight - Settings - Insight Key Stage Data Source Preferences</title>
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Open Sans Condensed";
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    html,
+    body {
+      font-family: "Open Sans";
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+
+<body class="bg-clouds-300 py-5">
+  <div class="container">
+
+    <div class="card shadow-sm" style="max-width: 60ch;">
+      <div class="card-body">
+        <h4 class="mb-3">Insight Key Stage Data Source Preferences</h4>
+
+        <p class="mb-5">Select the data source underpinning your local authority and school values for each key stage of Insight using the controls below.</p>
+
+        <div class="row mb-3">
+          <label for="acadyear" class="col-4 col-form-label fw-bold">Academic Year</label>
+          <div class="col-8">
+            <select id="acadyear" class="form-select">
+              <option>2015/16</option>
+              <option>2016/17</option>
+              <option>2017/18</option>
+              <option>2018/19</option>
+              <option>2019/20</option>
+              <option selected>2020/21</option>
+              <option>2021/22</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <label for="ks1" class="col-4 col-form-label fw-bold">Key Stage 1</label>
+          <div class="col-8">
+            <select id="ks1" class="form-select">
+              <option>Keypas (KS1 Data)</option>
+              <option>NPD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <label for="ks2" class="col-4 col-form-label fw-bold">Key Stage 2</label>
+          <div class="col-8">
+            <select id="ks2" class="form-select">
+              <option>Keypas (KS2 Data from DfE)</option>
+              <option>Keypas (KS2 Data from AAT)</option>
+              <option>NPD</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <label for="ks4" class="col-4 col-form-label fw-bold">Key Stage 4</label>
+          <div class="col-8">
+            <select id="ks4" class="form-select">
+              <option>Keypas (KS4 Exam Results)</option>
+              <option>Keypas (KS4 Data)</option>
+              <option>NPD</option>
+            </select>
+          </div>
+        </div>
+
+        <p>Data sources automatically roll forward as the year progresses, but if you wish to override an automatically selected data source you can do so here.</p>
+        <p>A change in data source will be reflected in Insight the following day, once the next overnight caching process is complete.</p>
+        <p class="mb-0">Once a data source reaches the "NPD (final)" dataset it becomes locked and can no longer be overridden.</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
