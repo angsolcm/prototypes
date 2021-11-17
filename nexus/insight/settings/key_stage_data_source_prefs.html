@@ -34,15 +34,15 @@
 <body class="bg-clouds-300 py-5">
   <div class="container">
 
-    <div class="card shadow-sm" style="max-width: 60ch;">
+    <div class="card shadow-sm" style="max-width: 80ch;">
       <div class="card-body">
         <h4 class="mb-3">Insight Key Stage Data Source Preferences</h4>
 
         <p class="mb-5">Select the data source underpinning your local authority and school values for each key stage of Insight using the controls below.</p>
 
         <div class="row mb-3">
-          <label for="acadyear" class="col-4 col-form-label fw-bold">Academic Year</label>
-          <div class="col-8">
+          <label for="acadyear" class="col-3 col-form-label fw-bold">Academic Year</label>
+          <div class="col">
             <select id="acadyear" class="form-select">
               <option>2015/16</option>
               <option>2016/17</option>
@@ -55,20 +55,42 @@
           </div>
         </div>
 
-        <div class="row mb-2">
-          <label for="ks1" class="col-4 col-form-label fw-bold">Key Stage 1</label>
-          <div class="col-8">
-            <select id="ks1" class="form-select">
+        <div class="row text-center fw-bold mb-1">
+          <div class="col offset-3">
+            Nexus
+          </div>
+          <div class="col">
+            Perspective
+          </div>
+        </div>
+
+        <div class="row mb-2 gx-1">
+          <label for="ks1" class="col-3 col-form-label fw-bold">Key Stage 1</label>
+          <div class="col">
+            <select id="ks1nxs" class="form-select">
               <option>Keypas (KS1 Data)</option>
               <option selected>NPD (provisional)</option>
             </select>
           </div>
+          <div class="col">
+            <select id="ks1psp" class="form-select">
+              <option selected>Keypas (KS1 Data)</option>
+              <option>NPD (provisional)</option>
+            </select>
+          </div>
         </div>
 
-        <div class="row mb-2">
-          <label for="ks2" class="col-4 col-form-label fw-bold">Key Stage 2</label>
-          <div class="col-8">
-            <select id="ks2" class="form-select">
+        <div class="row mb-2 gx-1">
+          <label for="ks2" class="col-3 col-form-label fw-bold">Key Stage 2</label>
+          <div class="col">
+            <select id="ks2nxs" class="form-select">
+              <option>Keypas (KS2 Data from DfE)</option>
+              <option>Keypas (KS2 Data from AAT)</option>
+              <option>NPD (revised)</option>
+            </select>
+          </div>
+          <div class="col">
+            <select id="ks2psp" class="form-select">
               <option>Keypas (KS2 Data from DfE)</option>
               <option>Keypas (KS2 Data from AAT)</option>
               <option>NPD (revised)</option>
@@ -76,10 +98,17 @@
           </div>
         </div>
 
-        <div class="row mb-5">
-          <label for="ks4" class="col-4 col-form-label fw-bold">Key Stage 4</label>
-          <div class="col-8">
-            <select id="ks4" class="form-select" disabled>
+        <div class="row mb-5 gx-1">
+          <label for="ks4" class="col-3 col-form-label fw-bold">Key Stage 4</label>
+          <div class="col">
+            <select id="ks4nxs" class="form-select" disabled>
+              <option>Keypas (KS4 Exam Results)</option>
+              <option>Keypas (KS4 Data)</option>
+              <option selected>NPD (final)</option>
+            </select>
+          </div>
+          <div class="col">
+            <select id="ks4psp" class="form-select" disabled>
               <option>Keypas (KS4 Exam Results)</option>
               <option>Keypas (KS4 Data)</option>
               <option selected>NPD (final)</option>
