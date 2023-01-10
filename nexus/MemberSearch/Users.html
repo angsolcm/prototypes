@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../static/css/bootstrap5/bootstrap-custom.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9292536ebe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+      html, body { font-family: "Open Sans"; font-size: 14px; }
+
+      h1, h2, h3, h4, h5, h6 { font-family: "Open Sans Condensed"; font-weight: bold; text-transform: uppercase; }
+
+      .btn { font-family: "Open Sans Condensed"; font-weight: bold !important; text-transform: uppercase; font-size: 16px !important; }
+
+      .table { font-size: 12px !important; }
+
+      table tr { height: 42px; }
+
+      thead tr { vertical-align: bottom; }
+
+      tbody tr { background-color: #eaeaeb; border-top: solid white 4px; border-bottom: solid white 3px; vertical-align: middle; }
+
+      a { color: #9a0d51; }
+    </style>
+  </head>
+  <body>
+    <div class="container my-3">
+
+      <div class="row justify-content-between align-items-center mb-3">
+        <div class="col col-auto">
+          <h1><i class="fa fa-solid fa-users me-2"></i>Users</h1>
+        </div>
+        <div class="col col-auto">
+          <button class="btn btn-success"><i class="fa fa-solid fa-file-export me-2"></i>Export List</button>
+          <button class="btn btn-nexus-primary"><i class="fa fa-solid fa-user-plus me-2"></i>Add A User</button>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Search:</label>
+          <input type="text" class="form-control" placeholder="Search name or username">
+        </div>
+        <div class="col">
+          <label class="form-label">Engagement:</label>
+          <select class="form-select">
+            <option>- Ignore -</option>
+            <option>Inactive for 1+ month</option>
+            <option>Inactive for 3+ months</option>
+            <option>Inactive for 6+ months</option>
+            <option>Inactive for 9+ months</option>
+            <option>Inactive for 12+ months</option>
+            <option>Soon due automatic archival</option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="form-label">Nexus Role:</label>
+          <select class="form-select">
+            <option>- All Nexus Roles -</option>
+          </select>
+        </div>
+        <div class="col">
+          <label class="form-label">LA:</label>
+          <select class="form-select">
+            <option>Southampton</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row justify-content-end border-bottom pb-3 mb-3">
+        <div class="col col-auto">
+          <button class="btn btn-nexus-secondary"><i class="fa fa-solid fa-circle-xmark me-2"></i>Reset Filters</button>
+          <button class="btn btn-nexus-primary"><i class="fa fa-solid fa-magnifying-glass me-2"></i>Search</button>
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-3">
+        <div class="col-auto">
+          <button class="btn btn-nexus-primary" disabled><i class="fa fa-solid fa-box-archive me-2"></i>Archive Selected</button>
+          <button class="btn btn-nexus-primary" disabled><i class="fa fa-solid fa-trash me-2"></i>Delete Selected</button>
+        </div>
+        <div class="col"></div>
+        <div class="col col-auto">
+          <div class="d-inline-block me-3"><strong>LA: </strong>Southampton</div>
+          <a class="btn btn-nexus-primary" href="ArchivedUsers.html"><i class="fa fa-solid fa-box-archive me-2"></i>View Archived Users</a>
+        </div>
+      </div>
+
+      <div class="alert alert-danger alert-dismissible fade show"><i class="fa fa-solid fa-circle-exclamation me-3"></i>There are 2 archived user(s) due for automatic deletion within the next 6 weeks. <a href="ArchivedUsers.html">More info</a> <button class="btn-close" data-bs-dismiss="alert"></button></div>
+      <div class="alert alert-warning alert-dismissible fade show"><i class="fa fa-solid fa-circle-exclamation me-3"></i>There are 7 inactive user(s) due for automatic archival within the next 6 weeks. Apply the "Engagement: Soon due automatic archival" filter for affected users. <button type="button" class="btn-close" data-bs-dismiss="alert"></button></div>
+
+      <div class="row justify-content-end" style="font-size: 12px;">
+        <div class="col col-auto">
+          <strong class="d-inline block me-3">Key:</strong>
+          <div class="d-inline-block"><i class="fa fa-solid fa-circle-exclamation text-average me-2"></i>Due for automatic archival within the next 6 weeks</div>
+        </div>
+      </div>
+
+      <table class="table mb-3" style="table-layout: fixed;">
+        <thead>
+          <tr>
+            <th style="width: 4ch;"><input type="checkbox" class="form-check-input"></th>
+            <th style="width: 4ch;"></th>
+            <th><a href="#">First Name</a></th>
+            <th><a href="#">Last Name</a></th>
+            <th><a href="#">Username</a></th>
+            <th><a href="#">Nexus Role</a></th>
+            <th><a href="#">Last Login</a></th>
+            <th style="width: 6ch;"></th>
+            <th style="width: 6ch;"></th>
+            <th style="width: 6ch;"></th>
+            <th style="width: 6ch;"></th>
+            <th style="width: 6ch;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Riley</a></td>
+            <td><a href="#" class="fw-bold">Walker</a></td>
+            <td>riley.walker</td>
+            <td>Standard</td>
+            <td>16/09/22</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#" data-bs-toggle="modal" data-bs-target="#delete-user"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td><i class="fa fa-solid fa-circle-exclamation text-average"></i></td>
+            <td><a href="#" class="fw-bold">Nell</a></td>
+            <td><a href="#" class="fw-bold">Noble</a></td>
+            <td>nell.noble</td>
+            <td>Restricted</td>
+            <td>25/02/20</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td><i class="fa fa-solid fa-circle-exclamation text-average"></i></td>
+            <td><a href="#" class="fw-bold">Isla</a></td>
+            <td><a href="#" class="fw-bold">Khan</a></td>
+            <td>isla.khan</td>
+            <td>Nexus Admin</td>
+            <td>10/01/19</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Brandon</a></td>
+            <td><a href="#" class="fw-bold">Needham</a></td>
+            <td>brandon.needham</td>
+            <td>Standard</td>
+            <td>03/01/23</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Muhammad</a></td>
+            <td><a href="#" class="fw-bold">Wright</a></td>
+            <td>muhammad.wright</td>
+            <td>Restricted</td>
+            <td>12/04/22</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td><i class="fa fa-solid fa-circle-exclamation text-average"></i></td>
+            <td><a href="#" class="fw-bold">Logan</a></td>
+            <td><a href="#" class="fw-bold">Little</a></td>
+            <td>logan.little</td>
+            <td>NCER Officer</td>
+            <td>25/04/18</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Ella</a></td>
+            <td><a href="#" class="fw-bold">Knight</a></td>
+            <td>ella.knight</td>
+            <td>Vendor Admin</td>
+            <td>31/10/22</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Olivia</a></td>
+            <td><a href="#" class="fw-bold">Walker</a></td>
+            <td>olivia.walker</td>
+            <td>Virtual Head</td>
+            <td>31/03/22</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Lucas</a></td>
+            <td><a href="#" class="fw-bold">Foster</a></td>
+            <td>lucas.foster</td>
+            <td>Social Care Analyst</td>
+            <td>03/01/23</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="form-check-input"></td>
+            <td></td>
+            <td><a href="#" class="fw-bold">Alexa</a></td>
+            <td><a href="#" class="fw-bold">Robinson</a></td>
+            <td>alexa.robinson</td>
+            <td>Standard</td>
+            <td>15/02/22</td>
+            <td><a href="#"><i class="fa fa-solid fa-envelope"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-phone"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-eye"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-box-archive"></i></a></td>
+            <td><a href="#"><i class="fa fa-solid fa-trash"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row justify-content-end">
+        <div class="col col-auto">
+          <button class="btn btn-nexus-primary">1</button>
+          <button class="btn btn-nexus-tertiary">2</button>
+          <button class="btn btn-nexus-tertiary">3</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal" tabindex="-1" id="delete-user">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center bg-light py-4 m-3">
+            <h1 class="mb-4">Delete User</h1>
+            <div class="mb-4">Are you sure you want to delete Riley Walker?</div>
+
+            <div class="alert alert-danger mb-4 fw-bold"><i class="fa fa-solid fa-circle-exclamation me-3"></i>This is an irreversible action. It cannot be undone.</div>
+
+            <button type="button" class="btn btn-negative"><i class="fa fa-solid fa-trash me-2"></i> Delete</button>
+            <button type="button" class="btn btn-nexus-secondary" data-bs-toggle="modal"><i class="fa fa-solid fa-circle-xmark me-2"></i> Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
